@@ -1,4 +1,3 @@
-#define _ALLOW_COMPILER_AND_STL_VERSION_MISMATCH 1
 #include <iostream>
 #define ll long long
 #define inf 0x3f3f3f3f
@@ -16,21 +15,19 @@ int main()
     ll bestLen = 0;
     ll bestStart = 0;
 
-    for (int i = 2; i * i <= n; i++) {
-        ll prod = 1;
-        for (int j = i; prod * j <= n; j++) {
-            prod *= j;
-            if (n % prod == 0) {
-                int len = j - i + 1;
-                if (len > bestLen) {
-                    bestLen = len;
-                    bestStart = i;
-                }
-            } else
-                break;
+    for (ll i = 2; i * i <= n; i++) {
+        ll t = n;
+        ll j = i;
+        while (t % j == 0) {
+            t /= j;
+            j++;
+        }
+        ll len = j - i;
+        if (len > bestLen) {
+            bestLen = len;
+            bestStart = i;
         }
     }
-
     if (bestLen == 0) {
         cout << 1 << '\n' << n << '\n';
         return 0;
