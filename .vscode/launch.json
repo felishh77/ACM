@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/lshuh/ACM/pta",
-      "program": "c:/Users/lshuh/ACM/pta/build/Debug/outDebug",
+      "cwd": "c:/Users/lshuh/ACM/templates",
+      "program": "c:/Users/lshuh/ACM/templates/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
