@@ -58,5 +58,8 @@
   "C_Cpp_Runner.msvcSecureNoWarnings": false,
   "clangd.arguments": [
     "--query-driver=C:/Program Files/mingw64/bin/g++.exe"
-  ]
+  ],
+  "files.associations": {
+    "ciso646": "cpp"
+  }
 }
