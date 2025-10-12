@@ -10,7 +10,7 @@ ll cnt(int n)
 {
     if (dp[n] != 0) return dp[n];
 
-    ll ans = 1;  // 当前数字本身作为一个数列
+    ll ans = 1; 
     for (int i = 1; i <= n / 2; i++) {
         ans += cnt(i);
     }
